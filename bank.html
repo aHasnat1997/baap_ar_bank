@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Web Design" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Tailwind" />
+  <meta name="author" content="A. Hasnat" />
+  <title>Bank of Father</title>
+  <!-- Favicon Link -->
+  <link rel="icon" type="image/x-icon" href="img/bank_PNG29.png" />
+  <!-- Font-Awesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-[#F3EFE0]">
+  <div class="mx-auto max-w-screen-lgo">
+    <!-- Header Start -->
+    <header>
+      <h1 class="text-center pt-10 text-7xl">Wallcome to <span class="text-[#1bcec8]">Bank of</span> <span
+          class="text-[#22A39F] font-semibold">Father</span></h1>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Section -->
+    <main class="w-3/4 mx-auto mt-11 grid gap-6">
+      <section class="grid grid-cols-3 gap-4">
+        <div class="bg-[#44a6a3] p-12 text-white rounded-2xl">
+          <h3 class="text-3xl font-bold">Deposit</h3>
+          <h2 class="text-6xl font-semibold">$ <span id="deposit-fild">00</span></h2>
+        </div>
+        <div class="bg-[#0e5350] p-12 text-white rounded-2xl">
+          <h3 class="text-3xl font-bold">Withdraw</h3>
+          <h2 class="text-6xl font-semibold">$ <span id="withdraw-fild">00</span></h2>
+        </div>
+        <div class="bg-[#06a5a0] p-12 text-white rounded-2xl">
+          <h3 class="text-3xl font-bold">Balance</h3>
+          <h2 class="text-6xl font-semibold">$ <span id="total-fild">1240</span></h2>
+        </div>
+      </section>
+      <section class="grid grid-cols-2 gap-4">
+        <div class="bg-[#05bfb9] p-16 rounded-2xl">
+          <h3 class="text-3xl font-bold text-white">Withdraw Amount</h3>
+          <input type="number" class="w-full p-4 my-4" id="withdraw-amount"
+            placeholder="Enter Amount that you want to Withdraw" />
+          <br />
+          <button id="withdraw-btn"
+            class="text-white text-2xl font-semibold bg-[#434242] hover:bg-[#222222] p-4 rounded-lg">Withdraw</button>
+        </div>
+        <div class="bg-[#1a8682] p-16 rounded-2xl">
+          <h3 class="text-3xl font-bold text-white">Deposit Amount</h3>
+          <input type="number" class="w-full p-4 my-4" id="deposit-amount"
+            placeholder="Enter Amount that you want to Deposit" />
+          <br />
+          <button id="deposit-btn"
+            class="text-white text-2xl font-semibold bg-[#434242] hover:bg-[#222222] p-4 rounded-lg">Deposit</button>
+        </div>
+      </section>
+    </main>
+    <!-- Main Section -->
+  </div>
+
+  <script src="js/bank.js"></script>
+</body>
+
+</html>
